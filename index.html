@@ -11,22 +11,20 @@
     <div id="title">
         <h1>everything system</h1>
     </div>
-
     <div>
-        <select>
-            <option>ethereum geth node1</option>
-            <option>ethereum geth node2</option>
-            <option>ethereum geth node3</option>
-
-        </select>
-        <br>
-        <button>connect</button>
-
+        <form>
+            <label>select the node you want to connect:</label>
+            <select id="ethereumNode">
+                <option value="node1">geth node1</option>
+                <option value="node2">geth node2</option>
+            </select>
+            <input id="press" type="button" value="connect" onclick="connectNode()">
+        </form>
     </div>
 
     <div>
         <p id="myAccount"></p>
-
+        <p id="myBalance"></p>
     </div>
 
 
